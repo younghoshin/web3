@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta charset=UTF-8″ />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="https://kit.fontawesome.com/20fe46358c.js" crossorigin="anonymous"></script>
+<style type="text/css">
+  *{
+    font-family: 'Nanum Gothic Coding', monospace;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  #HF_style{
+    position:fixed;
+    background-color: white;
+    border-top:0;
+    border-bottom: 0;
+    width:100%;
+  }
+  #pageone{
+    background-color: white;
+  }
+  #pan1{
+    position: fixed;
+  }
+ .bak{
+    max-width: 100%;
+    object-fit: cover;
+ }
+ .main-content{
+     text-align: center;
+     background-color: white;
+ }
+ .ui-content h2{
+     padding-top:0;
+     margin-top: 0;
+     margin-bottom: 5px;
+ }
+ .content{
+    margin-top: 5px;
+    background-color: white;
+ }
+ .content h2{
+    margin-top: 0;
+ }
+
+ .content h4{
+     margin-top: 0;
+     margin-bottom: 0;
+ }
+ .content p{
+     margin-top: 0;
+     color: tomato;
+ }
+
+ #p_hr{
+    border-bottom: solid 1px rgba(148, 148, 148,0.2);
+ }
+
+ .content i{
+    margin-top: 10px;
+    margin-left: 20px;
+ }
+  hr{
+    border: solid 1px rgba(148, 148, 148,0.2);
+   
+ }
+ .flex{
+     display: flex;
+     
+ }
+ .flex_s{
+     flex: 1;
+     border-right: solid 1px rgba(148, 148, 148,0.2);
+ }
+ .flex_s_1{
+     flex: 1;
+ }
+ .menu{
+     width: 40%;
+ }
+ .foot{
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    padding-left: 15px;
+    background-color: white;
+    padding-top: 10px;
+    border-top:solid 1px rgba(148, 148, 148,0.2);
+ }
+ .foot i{
+  font-size: 25px;
+ }
+ .foot a{
+   color:black;
+ }
+ .foot p{
+   padding-bottom: 10px;
+   padding-top: 5px;
+   margin: 0;
+   text-align: center;
+   font-size: 12px;
+ }
+ #pageone{
+     background-color:rgb(214, 210, 210);;
+ }
+</style>
+</head>
+
+<body>
+
+<div data-role="page" id="pageone">
+
+  <div data-role="panel" id="pan1" data-position="right" data-display="overlay">
+    <a href="#pageone" data-rel="close" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon ui-btn-rigth"></a>
+    <ui id="list">
+      <hr>
+      <ul><a href="#">중식</a></ul>
+      <ul><a href="#">일식</a></ul>
+      <ul><a href="#">양식</a></ul>
+      <ul><a href="#">한식</a></ul>
+    </ui>
+  </div>
+
+
+  <div data-role="header" id="HF_style">
+    <a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon" data-rel="back"></a>
+    <a href="#pan1" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-nodisc-icon ui-corner-all ui-shadow ui-alt-icon"></a>
+  </div>
+ <div class="bak">
+  <img src="back1.png" style="width: 100%;" height="300px">
+</div>
+
+  <div data-role="content" class="main-content">
+      <h2>현풍닭칼국수</h2>
+      <span style="color:rgb(255, 230, 0)"><i class="fas fa-star">  4.4/5</i></span> 
+      <hr> 
+    <div class="flex">
+        
+        <div class="flex_s">    
+    <a href="https://www.google.co.kr/maps/place/%ED%98%84%ED%92%8D%EB%8B%AD%EC%B9%BC%EA%B5%AD%EC%88%98%EA%B2%BD%EC%82%B0%ED%95%98%EC%96%91%EC%A0%90/@35.9140013,128.816974,17z/data=!3m1!4b1!4m5!3m4!1s0x35667278f2bd88c1:0x10ed37b0fcf69516!8m2!3d35.913997!4d128.8191573" style="color: tomato;">
+    <i class="fas fa-search-location"><p>위치</p></i></a>
+        </div> 
+        
+        <div class="flex_s_1">
+    <a href="http://hyunpungkalguksu.com/" style="color: tomato;">
+    <i class="fas fa-home"><p>홈페이지</p></i></a>
+        </div>
+         
+   </div>
+
+  </div>
+
+
+  <div class="content">
+    <i class="fas fa-phone-alt">⠀⠀053-857-2200</i>
+      <hr>
+    <i class="fas fa-search-location">⠀⠀경북 경산시 하양읍 하양로 110</i>
+      <hr>
+    <i class="far fa-clock">⠀⠀이용시간을 알수없음</i>
+      <hr>
+    <i class="fas fa-home"><a href="http://hyunpungkalguksu.com/" style="color: tomato;">⠀⠀http://hyunpungkalguksu.com/</a></i>
+      <hr style="margin-bottom: 0;"> 
+  </div>   
+
+  <div class="content">
+      <h2>⠀⠀대표 메뉴</h2>
+
+    <div class="flex">
+      <div class="flex_s" style="text-align: center;">
+        
+        <img src="h_m1.png" style="max-width: 100%; height: auto;">
+        <h4>닭칼국수</h4>
+        <p id="p_hr">7,000원</p>
+    
+    </div>
+                
+        <div class="flex_s_1" style="text-align: center;">
+        <img src="h_m2.png" style="max-width: 100%; height: auto;">
+        <h4>삼계칼국수</h4>
+        <p id="p_hr">9,500원</p>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="flex_s" style="text-align: center;">
+          
+          <img src="h_m3.png" style="max-width: 100%; height: auto;">
+          <h4>닭칼수육세트</h4>
+          <p>13,000</p>
+      
+      </div>
+                  
+          <div class="flex_s_1" style="text-align: center;">
+          <img src="h_m4.png" style="max-width: 100%; height: auto;">
+          <h4>삼계수육세트</h4>
+          <p>15,500원</p>
+          </div>
+      </div>
+
+  </div>
+  <br><br><br>
+
+  <div class="foot">
+     <a href="#">
+    <i class="fas fa-house-user"></i>
+    <p style="text-align: center;">홈</p>
+     </a>
+
+     <a href="#" style="padding-right: 30px;">
+      <i class="fas fa-search"></i>
+      <p>검색</p>
+     </a>
+  </div>
+
+
+
+  </div>
+
+
+
+
+
+</body>
+</html>
